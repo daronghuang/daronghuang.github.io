@@ -1,0 +1,64 @@
+/* ==========================================================================
+   MOBILE FIXES FOR PROFILE PHOTO AND SIDEBAR
+   ========================================================================== */
+
+/* Fix for very small screens (phones in portrait) */
+@media screen and (max-width: 480px) {
+  .sidebar {
+    padding: 0.5em;
+    
+    .author__avatar,
+    .author__content,
+    .author__urls-wrapper {
+      display: block !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+    
+    .author__avatar {
+      margin-bottom: 0.75em;
+      
+      img {
+        width: 100px !important;
+        height: 100px !important;
+        max-width: 100px !important;
+        margin: 0 auto !important;
+        display: block !important;
+      }
+    }
+    
+    .author__content {
+      padding: 0 !important;
+      margin-bottom: 1em;
+    }
+    
+    .author__name {
+      font-size: 1.25em !important;
+      margin-bottom: 0.5em !important;
+    }
+    
+    .author__bio {
+      font-size: 0.75em !important;
+      margin-bottom: 1em !important;
+    }
+  }
+}
+
+/* Fix for medium screens (tablets) */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .sidebar {
+    .author__avatar {
+      img {
+        width: 120px !important;
+        height: 120px !important;
+        max-width: 120px !important;
+      }
+    }
+  }
+}
+
+/* Ensure profile photo never gets distorted */
+.author__avatar img {
+  object-fit: cover !important;
+  object-position: center !important;
+}
