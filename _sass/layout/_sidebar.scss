@@ -58,32 +58,6 @@
   img {
     width: 100%;
   }
-
-  // Improve mobile layout for the author profile
-  @include breakpoint(max-width $medium - 1px) {
-    padding: 0 1em;
-    
-    .author__avatar,
-    .author__content {
-      display: block;
-      width: 100%;
-      text-align: center;
-    }
-    
-    .author__avatar {
-      margin-bottom: 0.5em;
-      
-      img {
-        width: 80px !important;
-        height: 80px !important;
-        margin: 0 auto;
-      }
-    }
-    
-    .author__content {
-      padding: 0;
-    }
-  }
 }
 
 .sidebar__right {
@@ -109,13 +83,9 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 60px; // Increased from 36px for better mobile experience
+  width: 36px;
   // set width only, for non-square avatars
   // height: 36px;
-
-  @include breakpoint($medium) {
-    width: 80px; // Even larger on medium screens
-  }
 
   @include breakpoint($large) {
     display: block;
@@ -124,20 +94,12 @@
   }
 
   img {
-    width: 100%; // Responsive width within container
     max-width: 175px;
-    height: auto; // Maintain aspect ratio on mobile
-    min-height: 50px; // Prevent it from getting too small
-    aspect-ratio: 1; // Maintain square shape
+    height: 175px;
     object-fit: cover;
     border-radius: 50%;
 
-    @include breakpoint($medium) {
-      min-height: 70px;
-    }
-
     @include breakpoint($large) {
-      height: 175px; // Fixed height only on large screens
       padding: 5px;
       border: 1px solid var(--global-border-color);
     }
@@ -150,11 +112,6 @@
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
-
-  @include breakpoint(max-width $medium - 1px) {
-    padding-left: 10px; // Reduce padding on small screens
-    padding-right: 15px;
-  }
 
   @include breakpoint($large) {
     display: block;
