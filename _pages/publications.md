@@ -15,9 +15,9 @@ redirect_from:
 
 ## Selected Papers
 
-<!-- Machetti, Simone, et al. "e-GPU: An Open-Source and Configurable RISC-V Graphic Processing Unit for TinyAI Applications." arXiv preprint arXiv:2505.08421 (2025). -->
-
 • <span style="color: cornflowerblue;">**[arXiv]**</span> S. Machetti, D. Pasquale, L. Orlandic, **D. Huang**, D. Kasap, G. Ansaloni, and D. Atienza. "*e-GPU: An Open-Source and Configurable RISC-V Graphic Processing Unit for TinyAI Applications*." arXiv preprint arXiv:2505.08421 (2025).
+
+• <span style="color: cornflowerblue;">**[IEEE D&T]**</span> D. Atienza, K. Zhu, **D. Huang**, and L. Costero. "*A 20-Year Retrospective on Power and Thermal Modeling and Management*." IEEE Design & Test, 2025.
 
 • <span style="color: cornflowerblue;">**[TPDS]**</span> **D. Huang**, L. Costero, and D. Atienza, "*An Evaluation Framework for Dynamic Thermal Management Strategies in 3D MultiProcessor System-on-Chip Co-Design*," IEEE Transactions on Parallel and Distributed Systems (TPDS), 2024.
 
